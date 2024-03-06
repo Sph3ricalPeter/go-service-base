@@ -14,11 +14,11 @@ There's a single endpoint `/alive`:
 
 ```shell
 curl http://localhost:8080/alive
-# prints {"message":"Yo I'm alive!"}
+# prints out {"message":"Yo I'm alive!"}
 ```
 
-Slog is used for logging. Calling the endpoint will print:
+Calling the endpoint will print:
 
-```shell
-go-first-try  | [GIN] 2024/03/06 - 18:25:50 | 200 |     104.666µs |    192.168.65.1 | GET      "/alive"
+```text
+go-base-app  | [GIN] 2024/03/06 - 18:37:39 | 200 |     142.333µs |    192.168.65.1 | GET      "/alive"
 ```

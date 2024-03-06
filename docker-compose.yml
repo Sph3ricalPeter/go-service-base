@@ -1,7 +1,7 @@
 version: '3'
 services:
-  go-first-try:
-    container_name: go-first-try
+  go-base:
+    container_name: go-base-app
     build: .
     ports:
       - "8080:8080"
