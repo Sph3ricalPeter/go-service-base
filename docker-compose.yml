@@ -1,0 +1,11 @@
+version: '3'
+services:
+  go-first-try:
+    container_name: go-first-try
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8080
+      - GIN_MODE=release
