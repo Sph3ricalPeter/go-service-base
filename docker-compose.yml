@@ -1,11 +1,11 @@
 version: '3'
 services:
-  go-base:
-    container_name: go-base-app
+  go-service-base:
+    container_name: app
     build: .
     ports:
-      - "8080:8080"
+      - ${PORT}:${PORT}
     environment:
       - HOST=0.0.0.0
-      - PORT=8080
-      - GIN_MODE=release
+      - PORT=${PORT}
+      - API_KEY=${API_KEY}
